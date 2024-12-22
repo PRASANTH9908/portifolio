@@ -1,0 +1,86 @@
+/* Maincard.css */
+
+/* General Card Styling */
+.card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+  position: relative;
+}
+
+/* 3D Hover Effect */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Hover Effect (Zoom In) */
+.card img {
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+  width: 100%;
+  height: 200px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover img {
+  transform: scale(1.1);
+}
+
+/* Title and Content Styles */
+.card-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.card-text {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/* Hover Effect on Title */
+.card:hover .card-title {
+  transform: scale(1.1);
+  color: #007bff; /* Optional color for title hover */
+}
+
+.card:hover .card-text {
+  opacity: 1;
+}
+
+/* Glow Effect */
+.card:hover .card-title {
+  text-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+
+/* Smooth Loading Animation */
+.card {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design Adjustments */
+@media (max-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 100%;
+  }
+
+  .col-md-6 {
+    flex: 0 0 100%;
+  }
+}
+

@@ -1,0 +1,14 @@
+/* Navbar link hover effect */
+.nav-link:hover {
+    color: white !important;  /* Make sure the text stays white */
+    box-shadow: 0 0 10px 2px white;  /* White glowing effect */
+    text-decoration: none;  /* Remove underline on hover */
+  }
+  
+  /* Optional: Active link glow effect */
+  .nav-link.active-link {
+    color: white !important;
+    box-shadow: 0 0 10px 2px white; /* White glowing effect */
+    text-decoration: none;  /* Remove underline on active link */
+  }
+  
